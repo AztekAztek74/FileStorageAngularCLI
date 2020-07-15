@@ -1,0 +1,20 @@
+<section class="upload">
+  <input
+    type="file"
+    #file
+    placeholder="Choose file"
+    (change)="uploadFile(file.files)"
+    style="display: none;"
+    multiple
+  />
+  <button class="button" type="button" (click)="file.click()">
+    <div class="button__wave"></div>
+    <span class="button__text">Upload File</span>
+  </button>
+  <div class="upload">
+    <span class="upload__percent" *ngIf="progress > 0"> {{ progress }}% </span>
+    <span class="upload__performed" *ngIf="message">
+      {{ message }}
+    </span>
+  </div>
+</section>

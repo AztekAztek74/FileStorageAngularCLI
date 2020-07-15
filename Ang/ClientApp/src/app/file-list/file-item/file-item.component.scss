@@ -1,0 +1,30 @@
+@import "../../style/const";
+
+.file-item {
+  &__file-name {
+    @extend %font__file;
+    width: 70%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__user {
+    @extend %font__user;
+    text-align: center;
+    width: 12%;
+  }
+
+  &__date {
+    @extend %font__date;
+    text-align: center;
+    width: 13%;
+  }
+
+  &__dell {
+    width: 5%;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    color: #ff0000;
+  }
+}

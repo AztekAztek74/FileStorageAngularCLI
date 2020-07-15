@@ -1,0 +1,21 @@
+<section class="file-list">
+  <div class="file-list__headers">
+    <div class="file-list__file-name">
+      <p>File</p>
+    </div>
+    <div class="file-list__user">
+      <p>User</p>
+    </div>
+    <div class="file-list__date">
+      <p>Date</p>
+    </div>
+    <div class="file-list__dell"></div>
+  </div>
+  <app-file-item
+    class="file-item"
+    *ngFor="let item of dataset"
+    [item]="item"
+    [getList]="getList"
+  >
+  </app-file-item>
+</section>

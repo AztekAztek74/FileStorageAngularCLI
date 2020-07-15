@@ -1,0 +1,17 @@
+<div
+  class="file-item__file-name"
+  (click)="onDownload(item.FileId, item.FileName)"
+>
+  <p>{{ item.FileName }}</p>
+</div>
+<div class="file-item__user">
+  <p>{{ item.User }}</p>
+</div>
+<div class="file-item__date">
+  <p>{{ getDate(item.Date) }}</p>
+</div>
+<div class="file-item__dell">
+  <p (click)="onDelete(item.FileId)">
+    &#9003;
+  </p>
+</div>
